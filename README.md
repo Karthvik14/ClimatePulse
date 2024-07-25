@@ -5,7 +5,7 @@ Welcome to Climate Pulse!
 We’re excited that you’ve chosen to explore Climate Pulse, our application designed to analyze and visualize public sentiment on climate change across various US administrations and presidential terms. Follow the steps below to get started:
 
 ## Step 1: Download the Application
- -Download and extract the contents of the ZIP file to a directory of your choice on your local machine.
+ - Download and extract the contents of the ZIP file to a directory of your choice on your local machine.
 
 ## Step 2: Installation
 - Ensure you have Python 3.6 or later installed on your system.
