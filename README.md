@@ -1,7 +1,7 @@
 
 ---------------------------------------------------
 
-Welcome to Climate Pulse!
+# Welcome to Climate Pulse!
 
 Thank you for choosing our application to explore public opinion on climate change across US governments and presidential terms. To get started, follow the steps below:
 
