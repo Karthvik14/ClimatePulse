@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climate Pulse - News</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Logo" width="200" height="100">
+        </a>     
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/visualizations">Visualizations</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <h1 class="text-center">Climate Pulse - News of the month</h1>
+        <br>
+        
+        <div id="newsContainer" class="card-container">
+            {% for article in articles %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ article.title }}</h5>
+                    <p class="card-text">{{ article.description }}</p>
+                    <p class="card-source">{{ article.source.name }}</p>
+                    <a href="{{ article.url }}" target="_blank" class="card-link">Read more</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

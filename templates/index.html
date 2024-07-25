@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climate Pulse</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Logo" width="200" height="100">
+        </a>        
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/visualizations">Discover Insights</a>
+            </li>
+            <li class="nav-item">
+                <a href="/news" class="btn btn-primary">View News</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <h1 class="text-center"> Welcome to Climate Pulse!</h1>
+        <br>
+        <section>
+            <h2>Understanding Climate Change</h2>
+            <p>
+                Our journey begins with understanding the core of our study - Climate Change and its impacts.
+                <br><br>
+                In simple terms, Climate Change refers to the long-term alteration of temperature and weather patterns in a place. It is largely caused by human activities such as burning fossil fuels and deforestation, which release greenhouse gases into the atmosphere and lead to a warming effect.
+                <br><br>
+                The impacts of climate change are far-reaching and severe. For instance, ancient glaciers are melting at an unprecedented rate, resulting in rising sea levels and threatening species dependent on icy habitats. Climate change also poses risks to economies, infrastructure, and ecosystems through extreme weather conditions like floods and droughts.
+            </p>
+        </section>
+        <section>
+            <h2>Role of Public Opinion</h2>
+            <p>
+                As we move forward with our project 'Climate Pulse,' we focus on the role of public opinion in climate change.
+                <br><br>
+                Public opinion is a powerful force that can shape climate change policies and actions. Strong public support for climate action serves as a catalyst for policymakers to implement bolder measures. Conversely, skepticism and denial of climate change hinder progress and lead to inadequate policies.
+                <br><br>
+                Public opinion also influences our everyday decisions, from consumption habits to lifestyle choices. These choices, when multiplied across billions of people, can have a significant impact on our planet.
+                <br><br>
+                Therefore, understanding and studying the trends of public sentiment towards climate change becomes crucial. It's not just about the science; it's about how we, as a society, respond to and act on that science.
+            </p>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climate Pulse - Visualizations</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- In the head section of your HTML file -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script> <!-- Include Google Charts library -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> <!-- Include your new JavaScript file -->    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Logo" width="200" height="100">
+        </a>     
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/news" class="btn btn-primary">View News</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <h1 class="text-center">Climate Pulse - Visualizations</h1>
+        <br>
+        <section>
+            <h2>About Climate Pulse Visualizations</h2>
+            <p>
+                We are using sentiment analysis to gain valuable insights into public opinion and attitudes towards different US government and presidential terms in the context of climate change social media data. By analyzing text data related to every US government and presidential term, we aim to understand how sentiment changes over time.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Analyzing Sentiments by US Government and Presidential Terms</h2>
+            <p>
+                Through our analysis of social media data related to every US government and presidential term, we are uncovering patterns and trends in public opinion towards climate change policies and decisions made during that period. By tracking changes in sentiment over time, we aim to gain insights into how public perception of the government's actions on climate change evolves.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Select President</h2>
+            <select id="presidentDropdown" class="custom-select">
+                <option value="">Select President</option>
+                <option value="Barack Obama">Barack Obama</option>
+                <option value="Donald Trump">Donald Trump</option>
+                <option value="Joe Biden">Joe Biden</option>
+            </select>
+        </section>        
+        
+        <!-- Add a container for the chart -->
+        <div class="chart-container"></div>
+            <div id="sentimentChart"></div>
+            <div id="sentimentBarChart"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+    </script>
+    <script>
+        var sentimentCounts = {{ sentimentCounts|tojson|safe }};
+        console.log("entering");
+        console.log(sentimentCounts); // Check if the values are passed correctly
+    </script>
+    
+   
+</body>
+</html>
