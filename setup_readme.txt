@@ -1,4 +1,5 @@
-
+---------------------------------------------------
+      Climate Pulse: Application Setup Guide
 ---------------------------------------------------
 
 Welcome to Climate Pulse!
@@ -6,11 +7,10 @@ Welcome to Climate Pulse!
 Thank you for choosing our application to explore public opinion on climate change across US governments and presidential terms. To get started, follow the steps below:
 
 Step 1: Download the Application
-- download and extract the contents of the zip file to a directory of your choice on your local machine.
+- You will receive a zipped file containing the Climate Pulse application. Please download and extract the contents of the zip file to a directory of your choice on your local machine.
 
 Step 2: Installation
 - Make sure you have Python installed on your system (Python 3.6 or above).
-- add in your google cloud credentials and mongodb api
 - Open a terminal or command prompt and navigate to the directory where you extracted the Climate Pulse application.
 
 Step 3: Run the Application
@@ -26,7 +26,7 @@ Step 4: Access the Application
 ---------------------------------------------------
 
 Explanation of Our Project:
-Climate Pulse is an initiative designed to analyze and visualize public opinion on climate change across different US governments and presidential terms. Our aim is to empower users with valuable insights into the sentiments and trends surrounding this critical global issue.
+Climate Pulse is an innovative application designed to analyze and visualize public opinion on climate change across different US governments and presidential terms. Our aim is to empower users with valuable insights into the sentiments and trends surrounding this critical global issue.
 
 By running the application, you will gain access to a user-friendly interface where you can explore various interactive visualizations, view statistical data, delve into sentiment analysis, and even stay updated with the latest news on climate change through our trending news section.
 
@@ -37,3 +37,11 @@ So, are you ready to embark on this exciting journey? Run the application, open 
 Please note that you may need an internet connection for some aspects of the application, such as retrieving the latest data updates and news articles.
 
 Thank you for choosing Climate Pulse. Together, we can make a difference in addressing climate change!
+
+---------------------------------------------------
+About Us:
+Manila Kamble mk8475
+Chandana Srinivasa Yatisha cs7074
+Sasank Kuppili sk10404
+Navya Sree Nutakki nn2382
+Karthvik Sarvade ks6807
